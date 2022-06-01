@@ -25,6 +25,9 @@ CREATE TABLE IF NOT EXISTS partial_patients (
     name VARCHAR(70) NOT NULL, -- name of the patient/client 
     patientID INT NOT NULL, -- ID of the patient that can be referenced from another table
     biodata JSON NOT NULL,  -- json biodata of the client/patient
+    email VARCHAR(80) NOT NULL, -- email of the client
+    mobileNumberPrefix SMALLINT NOT NULL DEFAULT 63, --mobile number prefix
+    mobileNumber INT(11) NOT NULL, -- mobile number of the patient
     diagnosis TEXT NOT NULL, -- diagnosis of the patient
     sex TINYINT NOT NULL,
     past_medication TEXT NOT NULL, -- past medications, input by the doctor
