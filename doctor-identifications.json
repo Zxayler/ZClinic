@@ -1,0 +1,8 @@
+{
+    "MEDICAL LICENSE": {
+        "ID": "NUMBER_ID",
+        "NAME": "NAME",
+        "IMAGE": "./path_to_file"
+    },
+    "__comment__": "more identifications.."
+}
